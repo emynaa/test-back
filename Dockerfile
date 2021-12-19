@@ -4,10 +4,10 @@ COPY . ./
 RUN npm install
 
 ENV PORT=27017
-ENV MONGO_URL=
-ENV MONGO_USER=
+ENV MONGO_URL= mongodb
+ENV MONGO_USER=mongoadmin
 ENV MONGO_PASS=
-ENV MONGO_DB=
+
 
 EXPOSE $8085
 CMD ["node", "index.js"]
